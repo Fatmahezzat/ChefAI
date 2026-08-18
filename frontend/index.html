@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="page-header">
+        <div class="logo">Chatify</div>
+        <nav>
+            <ul>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="chat-app">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h3>Recent Chats</h3>
+            </div>
+            <ul class="chat-list">
+                <li class="active">
+                    <div class="avatar-container">
+                        <div class="icon icon-robot"></div>
+                    </div>
+                    <div class="chat-meta">
+                        <div class="chat-name-row">
+                            <span class="chat-name">Chat with Ava</span>
+                            <span class="chat-time">116m</span>
+                        </div>
+                        <p class="chat-preview">Hi Ava! I need help creating a simple workout plan.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="avatar-container">
+                        <img src="https://via.placeholder.com/150/e0f2fe/0047b3?text=S" alt="Support Agent">
+                    </div>
+                    <div class="chat-meta">
+                        <div class="chat-name-row">
+                            <span class="chat-name">Support #123</span>
+                            <span class="chat-time">17m</span>
+                        </div>
+                        <p class="chat-preview">Our latest message to you from our service desk has arrived... </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="avatar-container">
+                        <img src="https://via.placeholder.com/150/e0f2fe/0047b3?text=O" alt="Onboarding Agent">
+                    </div>
+                    <div class="chat-meta">
+                        <div class="chat-name-row">
+                            <span class="chat-name">Onboarding</span>
+                            <span class="chat-time">28m</span>
+                        </div>
+                        <p class="chat-preview">Welcome! Let's get you set up with your new account. </p>
+                    </div>
+                </li>
+            </ul>
+        </aside>
+
+        <main class="chat-main">
+            <header class="chat-header">
+                <div class="chat-header-info">
+                    <div class="avatar-container"> 
+                        <div class="icon icon-robot"></div>
+                    </div>
+                    <span class="chat-header-title">Chat with Ava</span>
+                </div>
+                <div class="icon icon-gear"></div>
+            </header>
+
+            <div class="chat-body">
+                <!-- Bot Message -->
+                <div class="message bot-message">
+                    <div class="message-avatar">
+                        <div class="icon icon-robot"></div>
+                    </div>
+                    <div class="message-content">
+                        <span class="message-author">Ava</span>
+                        <p class="message-bubble">Hi Alex! I can certainly help with that. What are your main fitness goals and how often can you work out?</p>
+                        <span class="message-time">5:38 AM</span>
+                    </div>
+                </div>
+
+                <!-- User Message -->
+                <div class="message user-message">
+                    <div class="message-avatar">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Alex M.">
+                    </div>
+                    <div class="message-content">
+                        <span class="message-author">Alex M.</span>
+                        <p class="message-bubble">Hi Ava! I need help creating a simple workout plan.</p>
+                        <span class="message-time">2:35 AM</span>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="chat-footer">
+                <div class="input-container">
+                    <input id="message" type="text" class="chat-input" placeholder="Type your message...">
+                    <button class="send-button" onclick="sendMessage()">
+                        <div class="icon icon-send"></div>
+                    </button>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
