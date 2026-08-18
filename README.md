@@ -42,49 +42,6 @@ Features:
 
     Accept food images through the chat API for dish analysis.
 
-Project Structure:
-
-ChefAI/
-│
-├── frontend/
-│   ├── index.html
-│   ├── app.js
-│   └── style.css
-│
-├── src/
-│   ├── agent/
-│   │   ├── __init__.py
-│   │   └── agent.py
-│   │
-│   ├── api/
-│   │   ├── __init__.py
-│   │   ├── routes.py
-│   │   └── schemas.py
-│   │
-│   ├── models/
-│   │   ├── __init__.py
-│   │   └── llm_client.py
-│   │
-│   ├── prompts/
-│   │   ├── __init__.py
-│   │   └── system_prompts.py
-│   │
-│   ├── tools/
-│   │   ├── __init__.py
-│   │   ├── search.py
-│   │   └── supermarket.py
-│   │
-│   └── utils/
-│       ├── __init__.py
-│       └── helpers.py
-│
-├── .env
-├── .env.example
-├── .gitignore
-├── requirements.txt
-├── README.md
-└── main.py
-
 Technologies:
 
 Python
@@ -252,6 +209,8 @@ Tests → Contains unit and integration tests.
 
 Future Improvements:
 
+    Extending the agent to support MCP-based tool integration for standardized access to external tools and services.
+
     Add persistent conversation storage.
 
     Improve food image recognition.
@@ -267,8 +226,6 @@ Future Improvements:
     Add authentication and user profiles.
 
     Add more specialized cooking tools.
-
-    Use MCP
 
 Author
 
